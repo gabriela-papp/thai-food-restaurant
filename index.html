@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Thai Food Experience</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/css.css">
+    </head>
+    <body>
+       <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed"
+                            data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                            aria-controls="navbar">
+                        <span class="sr-only">Thai Food</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Some name</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                        <li><a href="about.php"><i class="fa fa-info-circle" aria-hidden="true"></i> About</a></li>
+
+                        <li class="dropdown"><a href="menu.php" class="dropdown-toggle" data-toggle="dropdown"
+                                                role="button" aria-haspopup="true"
+                                                aria-expanded="false">Menu<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Appetizers</a></li>
+                                <li><a href="#">Appetizers</a></li>
+                                <li><a href="#">Appetizers</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-header">Specials</li>
+                                <li><a href="#">Appetizers</a></li>
+                            </ul>
+
+                        </li>
+                        <li><a href="contact.php"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a data-toggle="modal" data-target="#loginModal">
+                            <span><i class="fa fa-sign-in" aria-hidden="true"></i> Login</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+            <div id="loginModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Login</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <label class="sr-only"for="email">Email Address</label>
+                                <input type="email" class="form-control input-sm" id="email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="password">Password</label>
+                                <input type="password" class="form-control input-sm" id="password" placeholder="Password">
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Remember Me
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-info btn-sm">Sign in</button>
+                            <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+             <header class="jumbotron">
+
+            <!-- Main component for a primary marketing message or call to action -->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-10">
+                        <h1>Thai Food Experience</h1>
+                        <p style="padding:40px;"></p>
+                        <p>We take inspiration from the Thai's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-2">
+                        <p style="padding: 40px;"></p>
+                        <a type="button" class="btn btn-warning btn-block" href="#reservation">Reserve Table</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </body>
+    </html>

@@ -1,0 +1,27 @@
+body{
+    padding-top: 50px;
+}
+#navbar ul li:hover{
+    background-color: #080808;
+}
+.dropdown-menu{
+    background-color: #080808;
+    
+}
+.dropdown-menu li a{
+    color:white;
+}
+.dropdown-menu li.dropdown-header{
+    color: white;
+}
+.tab-content{
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    
+  
+}
+.affix{
+    top:100px;
+}
