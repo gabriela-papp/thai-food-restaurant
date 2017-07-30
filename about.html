@@ -1,125 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Thai Food Experience</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-        <link href="awesome/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/css.css">
-    </head>
-    <body>
-       <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed"
-                            data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-                            aria-controls="navbar">
-                        <span class="sr-only">Thai Food</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Some name</a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-                        <li><a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> About</a></li>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thai Food Experience</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="200">
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"
+            data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+            aria-controls="navbar">
+            <span class="sr-only">Thai Food</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Some name</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+            <li><a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> About</a></li>
 
-                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                                                role="button" aria-haspopup="true"
-                                                aria-expanded="false">Menu<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="menu.html">Appetizers</a></li>
-                                <li><a href="menu.html">Appetizers</a></li>
-                                <li><a href="menu.html">Appetizers</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li class="dropdown-header">Specials</li>
-                                <li><a href="#">Appetizers</a></li>
-                            </ul>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                role="button" aria-haspopup="true"
+                aria-expanded="false">Menu<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="menu.html">Appetizers</a></li>
+                    <li><a href="menu.html">Appetizers</a></li>
+                    <li><a href="menu.html">Appetizers</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Specials</li>
+                    <li><a href="#">Appetizers</a></li>
+                </ul>
 
-                        </li>
-                        <li><a href="contact.html"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a data-toggle="modal" data-target="#loginModal">
-                            <span><i class="fa fa-sign-in" aria-hidden="true"></i> Login</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            </li>
+            <li><a href="contact.html"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a data-toggle="modal" data-target="#loginModal">
+                    <span><i class="fa fa-sign-in" aria-hidden="true"></i> Login</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+</nav>
+<div id="loginModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Login</h4>
             </div>
-        </nav>
-            <div id="loginModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Login</h4>
+            <div class="modal-body">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label class="sr-only"for="email">Email Address</label>
+                        <input type="email" class="form-control input-sm" id="email" placeholder="Email">
                     </div>
-                    <div class="modal-body">
-                        <form class="form-inline">
-                            <div class="form-group">
-                                <label class="sr-only"for="email">Email Address</label>
-                                <input type="email" class="form-control input-sm" id="email" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <label class="sr-only" for="password">Password</label>
-                                <input type="password" class="form-control input-sm" id="password" placeholder="Password">
-                            </div>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Remember Me
-                                </label>
-                            </div>
-                            <button type="submit" class="btn btn-info btn-sm">Sign in</button>
-                            <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
-                        </form>
+                    <div class="form-group">
+                        <label class="sr-only" for="password">Password</label>
+                        <input type="password" class="form-control input-sm" id="password" placeholder="Password">
                     </div>
-                </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Remember Me
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-info btn-sm">Sign in</button>
+                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
+                </form>
             </div>
         </div>
-             <header class="jumbotron">
+    </div>
+</div>
+<header class="jumbotron">
 
-            <!-- Main component for a primary marketing message or call to action -->
+    <!-- Main component for a primary marketing message or call to action -->
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-10">
-                        <h1>Thai Food Experience</h1>
-                        <p style="padding:40px;"></p>
-                        <p>We take inspiration from the Thai's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
-                    </div>
-                    <div class="col-xs-12 col-sm-2">
-                        <p style="padding: 40px;"></p>
-                        <a type="button" class="btn btn-warning btn-block" href="#reservation">Reserve Table</a>
-                    </div>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-10">
+                <h1>Thai Food Experience</h1>
+                <p style="padding:40px;"></p>
+                <p>We take inspiration from the Thai's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
             </div>
-        </header>
-          
-       
-           <footer>
-            <div class="container">
-                <div class="row">             
-                    <div class="col-xs-6 col-sm-3 col-md-3">
-                        <h5>Links</h5>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Menu</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
+            <div class="col-xs-12 col-sm-2">
+                <p style="padding: 40px;"></p>
+                <a type="button" class="btn btn-warning btn-block" href="#reservation">Reserve Table</a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="row"> 
+        <div class="col-xs-12 col-sm-10">
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html"></a>Home</li>
+                        <li class="active">About Us</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12"><h3>About Us</h3></div>
+                <hr>
+            </div>
+            <div id="history" class="row row-content">
+                <div class="col-xs-12 col-sm-6 col-lg-8">
+                    <h1>Our history</h1>
+
+                    <p>Bacon ipsum dolor amet meatloaf cupim ground round strip steak, 
+                        sausage turducken bacon beef ribs corned beef frankfurter turkey filet mignon. Fatback doner ham ham hock turducken. 
+                        Swine turkey pig strip steak shankle biltong. Ball tip cupim ground round, capicola pancetta t-bone short loin chicken 
+                        ham hock kielbasa filet mignon cow pork belly.
+                        Pork cupim jerky capicola filet mignon. Bacon ribeye kevin prosciutto shoulder flank jowl venison.</p>
+                        <div class="well">
+                            <blockquote>
+                                <p>Swine turkey pig strip steak shankle biltong. Ball tip cupim ground round, capicola pancetta t-bone short loin chicken 
+                                    ham hock kielbasa filet mignon cow pork belly.</p>
+                                    <footer>Marco Pollo
+                                        <cite title="Source Title">The Wit and Wisdom of Yogi Berra.</cite>
+                                    </footer>
+
+                                </blockquote>
+                            </div>
+
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Fact At The Glance</h3>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <dl class="dl-horizontal">
+                                    <dt>Started</dt>
+                                    <dd>3.Feb 2011</dd>
+                                    <dt>Major Stake Holder</dt>
+                                    <dd>Fine Arts Of Sofas</dd>
+                                    <dt>Last Year's Turnower</dt>
+                                    <dd>£1,250,000</dd>
+                                    <dt>Employees</dt>
+                                    <dd>55</dd>
+                                </dl>
+                            </div>
+                        </div>
                     </div>
-              
-        </footer>
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-    </body>
-    </html>
+
+                    <div class="row row-content" id="corporate"> 
+
+                        <div class="col-xs-12">
+                            <h1 class=>Corporate Leadership</h1>
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true"> 
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingPeter">
+                                        <h1 class="panel-title">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#peter" 
+                                            aria-expanded="true" aria-controls="peter">Peter Pang, Head Chef</a>
+                                        </h1>
+                                    </div>
+                                    <div role="tabpanel" class="panel-collapse collapse in" id="peter" aria-labelledby="headingPeter">
+                                        <div class="panel-body">
+                                            <p>Bacon ipsum dolor amet meatloaf cupim ground round strip steak, 
+                                                sausage turducken bacon beef ribs corned beef frankfurter turkey filet mignon. Fatback doner ham ham hock turducken. 
+                                                Swine turkey pig strip steak shankle biltong. Ball tip cupim ground round, capicola pancetta t-bone short loin chicken 
+                                                ham hock kielbasa filet mignon cow pork belly.
+                                                Pork cupim jerky capicola filet mignon. Bacon ribeye kevin prosciutto shoulder flank jowl venison.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingDanny">
+                                            <h1 class="panel-title">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#danny" 
+                                                aria-expanded="true" aria-controls="danny">Danny Whiterspoon, Chef</a>
+                                            </h1>
+                                        </div>
+                                        <div role="tabpanel" class="panel-collapse collapse" id="danny" aria-labelledby="headingDanny">
+                                            <div class="panel-body">
+                                                <p>Bacon ipsum dolor amet meatloaf cupim ground round strip steak, 
+                                                    sausage turducken bacon beef ribs corned beef frankfurter turkey filet mignon. Fatback doner ham ham hock turducken. 
+                                                    Swine turkey pig strip steak shankle biltong. Ball tip cupim ground round, capicola pancetta t-bone short loin chicken 
+                                                    ham hock kielbasa filet mignon cow pork belly.
+                                                    Pork cupim jerky capicola filet mignon. Bacon ribeye kevin prosciutto shoulder flank jowl venison.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingNan">
+                                                <h1 class="panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#nan" 
+                                                    aria-expanded="true" aria-controls="gabi">Nan Yong, Owner</a>
+                                                </h1>
+                                            </div>
+                                            <div role="tabpanel" class="panel-collapse collapse" id="nan" aria-labelledby="headingNan">
+                                                <div class="panel-body">
+                                                    <p>Bacon ipsum dolor amet meatloaf cupim ground round strip steak, 
+                                                        sausage turducken bacon beef ribs corned beef frankfurter turkey filet mignon. Fatback doner ham ham hock turducken. 
+                                                        Swine turkey pig strip steak shankle biltong. Ball tip cupim ground round, capicola pancetta t-bone short loin chicken 
+                                                        ham hock kielbasa filet mignon cow pork belly.
+                                                        Pork cupim jerky capicola filet mignon. Bacon ribeye kevin prosciutto shoulder flank jowl venison.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <nav class="hidden-xs col-sm-2" id="myScrollspy">
+                                <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="400">
+                                    <li><a href="#history">Our History</a></li>
+                                    <li><a href="#corporate">Corporate</a></li>                    
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    
+                    <footer>
+                        <div class="container">
+                            <div class="row">             
+                                <div class="col-xs-6 col-sm-3 col-md-3">
+                                    <h5>Links</h5>
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Menu</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                                
+                            </footer>
+                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                            <script src="js/bootstrap.min.js"></script>
+                        </body>
+                        </html>
