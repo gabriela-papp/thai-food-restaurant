@@ -1,181 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Thai Food Experience</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-        <link href="awesome/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/css.css">
-    </head>
-    <body>
-       <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed"
-                            data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-                            aria-controls="navbar">
-                        <span class="sr-only">Thai Food</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Some name</a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-                        <li><a href="about.html"><i class="fa fa-info-circle" aria-hidden="true"></i> About</a></li>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thai Food Experience</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"
+            data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+            aria-controls="navbar">
+            <span class="sr-only">Thai Food</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Some name</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa fa-info-circle" aria-hidden="true"></i> About</a></li>
 
-                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                                                role="button" aria-haspopup="true"
-                                                aria-expanded="false">Menu<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Appetizers</a></li>
-                                <li><a href="#">Appetizers</a></li>
-                                <li><a href="#">Appetizers</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li class="dropdown-header">Specials</li>
-                                <li><a href="#">Appetizers</a></li>
-                            </ul>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                role="button" aria-haspopup="true"
+                aria-expanded="false">Menu<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Appetizers</a></li>
+                    <li><a href="#">Appetizers</a></li>
+                    <li><a href="#">Appetizers</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Specials</li>
+                    <li><a href="#">Appetizers</a></li>
+                </ul>
 
-                        </li>
-                        <li><a href="contact.html"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a data-toggle="modal" data-target="#loginModal">
-                            <span><i class="fa fa-sign-in" aria-hidden="true"></i> Login</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            </li>
+            <li><a href="contact.html"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a data-toggle="modal" data-target="#loginModal">
+                    <span><i class="fa fa-sign-in" aria-hidden="true"></i> Login</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+</nav>
+<div id="loginModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Login</h4>
             </div>
-        </nav>
-            <div id="loginModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Login</h4>
+            <div class="modal-body">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label class="sr-only"for="email">Email Address</label>
+                        <input type="email" class="form-control input-sm" id="email" placeholder="Email">
                     </div>
-                    <div class="modal-body">
-                        <form class="form-inline">
-                            <div class="form-group">
-                                <label class="sr-only"for="email">Email Address</label>
-                                <input type="email" class="form-control input-sm" id="email" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <label class="sr-only" for="password">Password</label>
-                                <input type="password" class="form-control input-sm" id="password" placeholder="Password">
-                            </div>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Remember Me
-                                </label>
-                            </div>
-                            <button type="submit" class="btn btn-info btn-sm">Sign in</button>
-                            <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
-                        </form>
+                    <div class="form-group">
+                        <label class="sr-only" for="password">Password</label>
+                        <input type="password" class="form-control input-sm" id="password" placeholder="Password">
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Remember Me
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-info btn-sm">Sign in</button>
+                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<header class="jumbotron">
+
+    <!-- Main component for a primary marketing message or call to action -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-10">
+                <h1>Thai Food Experience</h1>
+                <p style="padding:40px;"></p>
+                <p>We take inspiration from the Thai's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <p style="padding: 40px;"></p>
+                <a type="button" class="btn btn-warning btn-block" href="#reservation">Reserve Table</a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="row">
+                <h2 class="col-xs-12 col-md-2">Starters</h2>
+                <div class="col-xs-12 col-md-10">
+                <div class="col-xs-12  col-sm-6 col-md-6">
+                        <p class="food title"><span>CRISPY PRAWNS    </span><span class="pull-right">5.50</span></p>
+
+                        <p>Coated in crispy breadcrumbs & deep-fried, served with Rosa’s sweet chilli sauce.</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <p class="food-title"><span>FRIED SPRING ROLLS</span><span class="pull-right">5</span></p>
+                        <p>Deep fried rolls of vegetables & glass noodles, served with a Rosa’s sweet chilli sauce.</p>
+
+                    </div>
+                    <div class="col-xs-12 col-sm-6  col-md-6">
+                        <p class="food-title"><span>CHICKEN SATAY</span><span class="pull-right">4.75</span></p>
+                        <p>Char-grilled succulent chicken in lemongrass marinade, served with a Rosa’s peanut sauce.</p>
+
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <p class="food-title"><span>PORK SKEWERS</span><span class="pull-right">5</span></p>
+                        <p>Char-grilled pork in soy and honey marinade, served with a Rosa’s tamarind dipping sauce.</p>
+
                     </div>
                 </div>
             </div>
         </div>
-             <header class="jumbotron">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="row">
+                <h2 class="col-xs-12 col-md-2">Salads</h2>
+                <div class="col-xs-12 col-md-10">
+                    <div class="col-xs-12  col-sm-6 col-md-6">
+                        <p class="food title"><span>SPICY BEEF SALAD    </span><span class="pull-right">9.50</span></p>
 
-            <!-- Main component for a primary marketing message or call to action -->
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-10">
-                        <h1>Thai Food Experience</h1>
-                        <p style="padding:40px;"></p>
-                        <p>We take inspiration from the Thai's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+                        <p>Char-grilled sirloin on spicy Thai salad, served with mint & chilli dressing.</p>
                     </div>
-                    <div class="col-xs-12 col-sm-2">
-                        <p style="padding: 40px;"></p>
-                        <a type="button" class="btn btn-warning btn-block" href="#reservation">Reserve Table</a>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <p class="food-title"><span>PAPAYA SALAD</span><span class="pull-right">5</span></p>
+                        <p>A spicy salad of four flavours made with raw papaya, long beans, tomatoes, dried shrimp & cashew nuts.</p>
+
                     </div>
                 </div>
             </div>
-        </header>
-           <div class="container">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="row">
-            <h2 class="col-xs-12 col-md-2">Appetizers</h2>
-            
-            <div class="col-xs-12  col-sm-6 col-md-5">
-                <p class="food title"><span>CRISPY PRAWNS    </span><span class="pull-right">5.50</span></p>
-               
-                <p>Coated in crispy breadcrumbs & deep-fried, served with Rosa’s sweet chilli sauce.</p>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-5">
-                <p class="food-title"><span>FRIED SPRING ROLLS</span><span class="pull-right">5</span></p>
-                <p>Deep fried rolls of vegetables & glass noodles, served with a Rosa’s sweet chilli sauce.</p>
-        
-            </div>
-             <div class="col-xs-12 col-sm-6  col-md-5 col-md-offset-2">
-                <p class="food-title"><span>CHICKEN SATAY</span><span class="pull-right">4.75</span></p>
-                <p>Char-grilled succulent chicken in lemongrass marinade, served with a Rosa’s peanut sauce.</p>
-        
-            </div>
-             <div class="col-xs-12 col-sm-6 col-md-5">
-                <p class="food-title"><span>PORK SKEWERS</span><span class="pull-right">5</span></p>
-                <p>Char-grilled pork in soy and honey marinade, served with a Rosa’s tamarind dipping sauce.</p>
-        
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-            
-             
-          <footer>
-            <div class="container">
-                <div class="row">             
-                    <div class="col-xs-6 col-sm-3 col-md-3">
-                        <h5>Links</h5>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Menu</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
+                <h2 class="col-xs-12 col-md-2">Mains</h2>
+                <div class="col-xs-12 col-md-10">
+                    <div class="col-xs-12  col-sm-6 col-md-6">
+                        <p class="food title"><span>BUTTERNUT RED CURRY</span><span class="pull-right">10</span></p>
+
+                        <p>Signature red curry with butternut squash & sweet basil.</p>
                     </div>
-                    <div class="col-xs-6 col-sm-5 col-md-5">
-                        <h5>Our Address</h5>
-                        <address>
-                            121, Clear Water Bay Road<br>
-                            Clear Water Bay<br>
-                            LONDON<br>
-                            Tel.: +852 1234 5678<br>
-                            Fax: +852 8765 4321<br>
-                            Email: <a href="mailto:thaifoodexperience@food.net">thaifoodrxperience@food.net</a>
-                        </address>
+
+                    <div class="col-xs-12 col-sm-6  col-md-6 >
+                        <p class="food-title"><span>BEEF MUSSAMAN CURRY</span><span class="pull-right">11.00</span></p>
+                        <p>Smooth yellow curry with silk road spices, potatoes & cashew nuts</p>
+
                     </div>
-                    <div class="col-xs-12 col-sm-4 col-md-4">
-                        <div style="padding: 40px 10px;">
-                            <a href="http://google.com/+"> <i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                            <a href="http://www.facebook.com/profile.php?id="> <i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a href="http://www.linkedin.com/in/"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            <a href="http://twitter.com/"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            <a href="http://youtube.com/"> <i class="fa fa-youtube" aria-hidden="true"></i></a>
-                            <a href="mailto:"> <i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-                        </div>
+
+                    <div class="col-xs-12 col-sm-6  col-md-6 ">
+                        <p class="food-title"><span>GREEN CURRY</span><span class="pull-right"></span></p>
+                        <p>One of Thailand's most loved curries. With aubergine, bamboo shoots & sweet basil.</p>
+                        <p class="food-title"><span>Veggies anf Tofu</span><span class="pull-right">9.00</span></p>
+                        <p class="food-title"><span>Chicken/Beef</span><span class="pull-right">11.00</span></p>
+                        <p class="food-title"><span>Prawwns</span><span class="pull-right">12</span></p>
                     </div>
-                    <div class="col-xs-12">
-                        <p style="padding:10px;"></p>
-                        <p align=center>Â© Copyright 2015 Thai Food Experience</p>
+                    <div class="col-xs-12 col-sm-6 col-md-6 ">
+                        <p class="food-title"><span>GCHILLI & BASIL STIR FRY</span><span class="pull-right"></span></p>
+                        <p>A spicy & fragrant stir fry with London-grown Thai basil, onions & long beans. A Thai staple.</p>
+                        <p class="food-title"><span>Veggies anf Tofu</span><span class="pull-right">8.00</span></p>
+                        <p class="food-title"><span>Chicken/Beef</span><span class="pull-right">9.50</span></p>
+                        <p class="food-title"><span>Prawwns</span><span class="pull-right">12</span></p>
                     </div>
                 </div>
             </div>
-        </footer>
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-    </body>
-    </html>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <div class="container">
+        <div class="row">             
+            <div class="col-xs-6 col-sm-3 col-md-3">
+                <h5>Links</h5>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-sm-5 col-md-5">
+                <h5>Our Address</h5>
+                <address>
+                    121, Clear Water Bay Road<br>
+                    Clear Water Bay<br>
+                    LONDON<br>
+                    Tel.: +852 1234 5678<br>
+                    Fax: +852 8765 4321<br>
+                    Email: <a href="mailto:thaifoodexperience@food.net">thaifoodrxperience@food.net</a>
+                </address>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <div style="padding: 40px 10px;">
+                    <a href="http://google.com/+"> <i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    <a href="http://www.facebook.com/profile.php?id="> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="http://www.linkedin.com/in/"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="http://twitter.com/"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="http://youtube.com/"> <i class="fa fa-youtube" aria-hidden="true"></i></a>
+                    <a href="mailto:"> <i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <p style="padding:10px;"></p>
+                <p align=center>Â© Copyright 2015 Thai Food Experience</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
