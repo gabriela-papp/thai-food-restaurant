@@ -15,21 +15,28 @@ body{
     color: white;
 }
 .jumbotron{
-    background-image: url(../images/thai1.jpg);
+    background-image: url(../images/thai7.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
 }
 .jumb_about{
-background-image: url(../images/thai2.jpg);
+background-image: url(../images/thai5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
 }
 .jumb_contact{
-    background-image: url(../images/thai3.jpg);
+    background-image: url(../images/thai8.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center top;
+    background-position: center center;
+}
+.jumb_menu{
+     background-image: url(../images/thai9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 .tab-content{
     border-left: 1px solid #ddd;
