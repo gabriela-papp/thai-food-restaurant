@@ -22,6 +22,9 @@ body{
     color:white;
     text-shadow: 2px 2px 4px #000000;
 }
+.jumb_home{
+    margin-bottom: 0;
+}
 .jumb_about{
 background-image: url(../images/thai5.jpg);
     background-repeat: no-repeat;
@@ -39,6 +42,17 @@ background-image: url(../images/thai5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
+.container_home_page{
+    
+    padding-bottom: 30px;
+}
+.images{
+    padding: 0;
+}
+.images img{
+    width: 100%;
+    
 }
 .tab-content{
     border-left: 1px solid #ddd;
