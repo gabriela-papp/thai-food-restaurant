@@ -51,3 +51,8 @@ background-image: url(../images/thai5.jpg);
 .affix{
     top:100px;
 }
+footer{
+    color: white;
+    background-color: #3c3c3c;
+
+}
