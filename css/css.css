@@ -14,6 +14,7 @@ body{
 .dropdown-menu li.dropdown-header{
     color: white;
 }
+
 .jumbotron{
     background-image: url(../images/thai7.jpg);
     background-repeat: no-repeat;
@@ -21,6 +22,10 @@ body{
     background-position: center center;
     color:white;
     text-shadow: 2px 2px 4px #000000;
+}
+.reserve{
+    animation-delay: 2s;
+    
 }
 .jumb_home{
     margin-bottom: 0;
@@ -47,6 +52,7 @@ background-image: url(../images/thai5.jpg);
     
     padding-bottom: 30px;
 }
+
 .images{
     padding: 0;
 }
