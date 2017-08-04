@@ -23,9 +23,12 @@ body{
     color:white;
     text-shadow: 2px 2px 4px #000000;
 }
+.jumbo-heading{
+    animation-duration: 1.5s; 
+}
 .reserve{
     animation-delay: 2s;
-    
+
 }
 .jumb_home{
     margin-bottom: 0;
@@ -55,11 +58,22 @@ background-image: url(../images/thai5.jpg);
 
 .images{
     padding: 0;
+    position: relative;
 }
 .images img{
     width: 100%;
     
 }
+.menu-items{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    
+}
+
 .tab-content{
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
