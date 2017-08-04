@@ -84,6 +84,10 @@ background-image: url(../images/thai5.jpg);
     
   
 }
+.row-content{
+    margin-left: 10px;
+    margin-right: 10px;
+}
 .affix{
     top:100px;
 }
