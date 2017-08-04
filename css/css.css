@@ -27,6 +27,7 @@ body{
     animation-duration: 1.5s; 
 }
 .reserve{
+    padding-right: 10px;
     animation-delay: 2s;
 
 }
@@ -85,6 +86,9 @@ background-image: url(../images/thai5.jpg);
 }
 .affix{
     top:100px;
+}
+.calls{
+    padding-bottom: 10px;
 }
 footer{
     color: white;

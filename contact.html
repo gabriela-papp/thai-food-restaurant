@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/css.css">
 </head>
 <body>
- <nav class="navbar navbar-inverse navbar-fixed-top">
+   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed"
@@ -28,7 +28,7 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+            <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
             <li><a href="about.html"><i class="fa fa-info-circle" aria-hidden="true"></i> About</a></li>
 
             <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"
@@ -44,7 +44,7 @@
                 </ul>
 
             </li>
-            <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact</a></li>
+            <li class="active"><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact</a></li>
             <li><a href="http://www.facebook.com/"> <i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
             <li><a href="http://twitter.com/"> <i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
             <li><a href="http://youtube.com/"> <i class="fa fa-youtube fa-jg" aria-hidden="true"></i></a></li>
@@ -103,7 +103,7 @@
             </div>
             <div class="col-xs-12 col-sm-2">
                 <p style="padding: 40px;"></p>
-                <a type="button" class="btn btn-warning btn-block reserve" href="#reservation">Reserve Table</a>
+                <a type="button" class="btn btn-warning btn-block reserve" href="#reservation">Book a Table</a>
             </div>
         </div>
     </div>
@@ -112,51 +112,36 @@
 <!-- Main component for a primary marketing message or call to action -->
 
 <div class="container">
-  <div class="col-xs-12 col-sm-6 col-lg-4">
-                            <div class="panel panel-primary">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">Fact About Us</h3>
-                                </div>
-                            </div>
-                            <div class="panel-body">
-                                <dl class="dl-horizontal">
-                                    <dt>Customers served</dt>
-                                    <dd>2.2M</dd>
-                                    <dt>Pad Thais server</dt>
-                                    <dd>200k</dd>
-                                    <dt>Coconut Milk used</dt>
-                                    <dd>90T</dd>
-                                    <dt>Employees</dt>
-                                    <dd>25</dd>
-                                </dl>
-                            </div>
-                        </div>
+
     <div class="row">
-       <div class="col-xs-6 col-sm-5 col-md-5">
-        <h5>Our Address</h5>
-        <address>
-            121, Clear Water Bay Road<br>
-            Clear Water Bay<br>
-            LONDON<br>
-            Tel.: +852 1234 5678<br>
-            Fax: +852 8765 4321<br>
-            Email: <a href="mailto:thaifoodexperience@food.net">thaifoodexperience@food.net</a>
-        </address>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-sm-offset-1">
-        <h5>Map of our location</h5>
-    </div> 
-    <div class="col-xs-12 col-sm-11 col-sm-offset-1">
+      <div align="center" class="calls col-xs-12 col-sm-12 ">
         <div class="btn-group" role="group" aria-label="...">
             <a type="button" class="btn btn-primary" href="tel:+4478965478"><i class="fa fa-phone "> Call</i></a>
             <a type="button" class="btn btn-info" href="tel:+4478965478"><i class="fa fa-skype "> Skype</i></a>
             <a type="button" class="btn btn-success" href="gp@gmail.com"><i class="fa fa-envelope-o "> Mail us</i></a>
         </div>
     </div>
+    
+
+    <div class="col-xs-12 col-sm-6 col-md-5">
+        <h5>Where to find us</h5>
+        <address>
+          <i class="fa fa-map-marker" aria-hidden="true"></i>  121, Waters Road LONDON<br>
+          <i class="fa fa-phone "></i>  +44 1234 5678<br>
+          <i class="fa fa-envelope-o "></i>thaifoodexperience@food.net
+        </address>
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-sm-offset-1">
+       
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.298087673912!2d0.005529715068334077!3d51.43431932386602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a9f905335637%3A0x3926877fda2dee79!2s121+Waters+Rd%2C+London+SE6+1UJ!5e0!3m2!1sen!2suk!4v1501872080058" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    </div> 
+
 
     <div class="row row-content">
         <div class="col-xs-12">
-            <h3>Send us your Feedback</h3> 
+            <h3 align="center">Get in touch</h3> 
         </div>
         <div class="col-xs-12 col-sm-9">
             <form class="form-horizontal" role="form">
@@ -175,57 +160,49 @@
                 <div class="form-group">
                     <label for="telnum" class="col-sm-2 control-label">Contact No.</label>
                     <div class="col-sm-10">
-                        <div class="col-xs-5 col-sm-4 col-md-3">
-                            <div class="input-group">
-                                <div class="input-group-addon">(</div>
-                                <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area Code">
-                                <div class="input-group-addon">)</div>
-                            </div>
-                        </div>
-                        <div class="col-xs-7 col-sm-6 col-md-7">
-                            <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel Number">
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="email" class="col-sm-2 control-label">Email</label>
-                    <div class="col-sm-10">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="feedback" class="col-sm-2 control-label">Your Feedback</label>
-                    <div class="col-sm-10">
-                        <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" class="btn btn-primary">Send Us The Feedback</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="col-xs-12 col-sm-3">
-            <p style="padding:20px;"></p>
-        </div>
-    </div>  
-    </div>
-    </div>
+                      <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel Number">
 
-     <footer>
-        <div class="container">
-            <div class="row">             
-                
-                <div class="col-xs-12">
-                    <p style="margin-bottom:15px;"></p>
-                    <p align=center>© Copyright 2015 Thai Food Experience</p>
+                  </div>
+              </div>
+              <div class="form-group">
+                <label for="email" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email">
                 </div>
             </div>
+            <div class="form-group">
+                <label for="feedback" class="col-sm-2 control-label">Your Feedback</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary">Send Us The Feedback</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+        <p style="padding:20px;"></p>
+    </div>
+</div>  
+</div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row">             
+
+            <div class="col-xs-12">
+                <p style="margin-bottom:15px;"></p>
+                <p align=center>© Copyright 2015 Thai Food Experience</p>
+            </div>
         </div>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
