@@ -56,23 +56,23 @@ body{
     margin-top: 15px;
 }
 .container_home_page{
-    
+
     padding-bottom: 30px;
 }
 .follow-us{
-
+ width: 100%;
 
 }
 .follow{
     text-align: center;
-
+    padding:0;
 }
 .follow li{
     display: inline-block;
     text-decoration: none;
 }
 .follow li i{
-    width: 100%;
+    padding: 10px;
     color:  #3c3c3c;
 }
 .images{
@@ -100,7 +100,7 @@ body{
     border-bottom: 1px solid #ddd;
     padding: 10px;
     
-    
+
 }
 .row-content{
     margin-left: 10px;
@@ -137,6 +137,9 @@ body{
 .food{
     margin-top: 5px;
     margin-bottom: 5px;
+}
+.find-us{
+    font-weight: bold;
 }
 footer{
     color: white;
