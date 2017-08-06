@@ -35,7 +35,7 @@ body{
     margin-bottom: 0;
 }
 .jumb_about{
-background-image: url(../images/thai5.jpg);
+    background-image: url(../images/thai5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
@@ -47,16 +47,34 @@ background-image: url(../images/thai5.jpg);
     background-position: center center;
 }
 .jumb_menu{
-     background-image: url(../images/thai9.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+   background-image: url(../images/thai9.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+}
+.promotions{
+    margin-top: 15px;
 }
 .container_home_page{
     
     padding-bottom: 30px;
 }
+.follow-us{
 
+
+}
+.follow{
+    text-align: center;
+
+}
+.follow li{
+    display: inline-block;
+    text-decoration: none;
+}
+.follow li i{
+    width: 100%;
+    color:  #3c3c3c;
+}
 .images{
     padding: 0;
     position: relative;
@@ -82,7 +100,7 @@ background-image: url(../images/thai5.jpg);
     border-bottom: 1px solid #ddd;
     padding: 10px;
     
-  
+    
 }
 .row-content{
     margin-left: 10px;
@@ -100,7 +118,7 @@ background-image: url(../images/thai5.jpg);
 }
 .menu-title{
     position: absolute;
-     top: 40%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
